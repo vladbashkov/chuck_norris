@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title></title>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+<div class="main">
+
+<div class="content">
+    <div class="heading">
+      <h1 class="title">Hey!</h1>
+      <h2 class="welcoming">Let’s try to find a joke for you:</h2>
+    </div>
+
+    <div class="joke__form__container">
+
+      <form class="form__joke" id="formJoke">
+        <section>
+          <label for="randomCategory">
+            <input type="radio" value="random" name="jokeType" id="randomCategory" checked>
+            Random
+          </label>
+        </section>
+
+        <section>
+          <label for="categoriesType">
+            <input type="radio" value="categories" name="jokeType" id="categoriesType">
+            Categories
+          </label>
+          <ul class="categories__list" id="categoriesList"></ul>
+        </section>
+
+        <section>
+          <label for="categoriesSearch">
+            <input type="radio" value="search" name="jokeType" id="categoriesSearch">
+            Search
+          </label>
+          <input type="text" class="search__joke" id="searchJoke" placeholder="Free text search...">
+        </section>
+
+        <button class="joke__btn">Get a joke</button>
+
+      </form>
+
+      <div class="joke__container" id="jokeContainer"></div>
+
+    </div>
+
+  </div>
+
+  <div class="sidebar">
+      <span class="sidebar__heading">Favorite</span>
+
+      <div class="favorite__jokes" id="jokesFav"></div>
+
+  </div>
+
+</div>
+
+  	<script src="js/main.js"></script>
+  </body>
+</html>
